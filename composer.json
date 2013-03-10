@@ -1,0 +1,22 @@
+{
+    "name": "phabber/phabber",
+    "description": "PHP Jabber bot written using react libraries for non-blocking IO.",
+    "require": {
+        "react/event-loop": "dev-master",
+        "react/socket": "dev-master",
+        "react/dns": "dev-master",
+        "psr/log": "1.0.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "3.7.19",
+        "phing/phing": "2.5.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jeremy Cook",
+            "email": "jeremycook0@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
