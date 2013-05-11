@@ -1,2 +1,4 @@
 vendor/*
 .lvimrc
+bin/phing
+bin/phpunit
