@@ -1,0 +1,3 @@
+[submodule "react-vagrant"]
+	path = react-vagrant
+	url = git@github.com:JCook21/react-vagrant.git
