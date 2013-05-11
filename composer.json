@@ -2,9 +2,7 @@
     "name": "phabber/phabber",
     "description": "PHP Jabber bot written using react libraries for non-blocking IO.",
     "require": {
-        "react/event-loop": "dev-master",
-        "react/socket": "dev-master",
-        "react/dns": "dev-master",
+        "react/react": "0.3.2",
         "psr/log": "1.0.0"
     },
     "require-dev": {

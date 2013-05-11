@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "fbd1933168722ece544c18d271e98d9f",
+    "hash": "b631c5bf912f0a7a6600a074a1d2c764",
     "packages": [
         {
             "name": "evenement/evenement",
@@ -51,6 +51,50 @@
             "time": "2012-12-29 17:04:52"
         },
         {
+            "name": "guzzle/parser",
+            "version": "dev-master",
+            "target-dir": "Guzzle/Parser",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/parser.git",
+                "reference": "v3.4.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guzzle/parser/zipball/v3.4.3",
+                "reference": "v3.4.3",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.4-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Guzzle\\Parser": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Interchangeable parsers used by Guzzle",
+            "homepage": "http://guzzlephp.org/",
+            "keywords": [
+                "URI Template",
+                "cookie",
+                "http",
+                "message",
+                "url"
+            ],
+            "time": "2013-04-26 15:47:38"
+        },
+        {
             "name": "psr/log",
             "version": "1.0.0",
             "source": {
@@ -87,132 +131,6 @@
                 "psr-3"
             ],
             "time": "2012-12-21 11:40:51"
-        },
-        {
-            "name": "react/cache",
-            "version": "dev-master",
-            "target-dir": "React/Cache",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/reactphp/cache.git",
-                "reference": "v0.3.2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/reactphp/cache/zipball/v0.3.2",
-                "reference": "v0.3.2",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.2",
-                "react/promise": ">=1.0,<2.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "0.3-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "React\\Cache": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "Async caching.",
-            "keywords": [
-                "cache"
-            ],
-            "time": "2013-04-24 08:33:43"
-        },
-        {
-            "name": "react/dns",
-            "version": "dev-master",
-            "target-dir": "React/Dns",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/reactphp/dns.git",
-                "reference": "v0.3.2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/reactphp/dns/zipball/v0.3.2",
-                "reference": "v0.3.2",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.2",
-                "react/cache": "0.3.*",
-                "react/promise": ">=1.0,<2.0",
-                "react/socket": "0.3.*"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "0.3-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "React\\Dns": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "Async DNS resolver.",
-            "keywords": [
-                "dns",
-                "dns-resolver"
-            ],
-            "time": "2013-04-27 08:57:30"
-        },
-        {
-            "name": "react/event-loop",
-            "version": "dev-master",
-            "target-dir": "React/EventLoop",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/reactphp/event-loop.git",
-                "reference": "v0.3.2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/reactphp/event-loop/zipball/v0.3.2",
-                "reference": "v0.3.2",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.3"
-            },
-            "suggest": {
-                "ext-libev": "*",
-                "ext-libevent": ">=0.0.5"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "0.3-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "React\\EventLoop": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "Event loop abstraction layer that libraries can use for evented I/O.",
-            "keywords": [
-                "event-loop"
-            ],
-            "time": "2013-01-14 23:11:47"
         },
         {
             "name": "react/promise",
@@ -258,69 +176,38 @@
             "time": "2013-04-03 14:05:55"
         },
         {
-            "name": "react/socket",
-            "version": "dev-master",
-            "target-dir": "React/Socket",
+            "name": "react/react",
+            "version": "v0.3.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/reactphp/socket.git",
+                "url": "https://github.com/reactphp/react.git",
                 "reference": "v0.3.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reactphp/socket/zipball/v0.3.2",
+                "url": "https://api.github.com/repos/reactphp/react/zipball/v0.3.2",
                 "reference": "v0.3.2",
                 "shasum": ""
             },
             "require": {
                 "evenement/evenement": "1.0.*",
+                "guzzle/parser": ">=3.0,<4.0",
                 "php": ">=5.3.3",
-                "react/event-loop": "0.3.*",
-                "react/stream": "0.3.*"
+                "react/promise": ">=1.0,<2.0"
             },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "0.3-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "React\\Socket": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "Library for building an evented socket server.",
-            "keywords": [
-                "Socket"
-            ],
-            "time": "2013-04-26 20:23:10"
-        },
-        {
-            "name": "react/stream",
-            "version": "dev-master",
-            "target-dir": "React/Stream",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/reactphp/stream.git",
-                "reference": "v0.3.2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/reactphp/stream/zipball/v0.3.2",
-                "reference": "v0.3.2",
-                "shasum": ""
-            },
-            "require": {
-                "evenement/evenement": "1.0.*",
-                "php": ">=5.3.3"
+            "replace": {
+                "react/cache": "self.version",
+                "react/dns": "self.version",
+                "react/event-loop": "self.version",
+                "react/http": "self.version",
+                "react/http-client": "self.version",
+                "react/socket": "self.version",
+                "react/socket-client": "self.version",
+                "react/stream": "self.version"
             },
             "suggest": {
-                "react/event-loop": "0.3.*",
-                "react/promise": "~1.0"
+                "ext-libev": "*",
+                "ext-libevent": "*"
             },
             "type": "library",
             "extra": {
@@ -330,19 +217,19 @@
             },
             "autoload": {
                 "psr-0": {
-                    "React\\Stream": ""
+                    "React": "src"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
-            "description": "Basic readable and writable stream interfaces that support piping.",
+            "description": "Nuclear Reactor written in PHP.",
             "keywords": [
-                "pipe",
-                "stream"
+                "event-loop",
+                "reactor"
             ],
-            "time": "2013-05-10 15:12:22"
+            "time": "2013-05-10 15:22:46"
         }
     ],
     "packages-dev": [
@@ -804,11 +691,9 @@
 
     ],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "react/event-loop": 20,
-        "react/socket": 20,
-        "react/dns": 20
-    },
+    "stability-flags": [
+
+    ],
     "platform": [
 
     ],
