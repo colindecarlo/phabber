@@ -18,5 +18,8 @@
             "email": "jeremycook0@gmail.com"
         }
     ],
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "config": {
+      "bin-dir": "bin"
+    }
 }
